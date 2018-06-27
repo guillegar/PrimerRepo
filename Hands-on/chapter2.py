@@ -320,3 +320,7 @@ m = len(squared_errors)
 print(np.sqrt(stats.t.interval(confidence, m - 1,
                          loc=np.mean(squared_errors),
                          scale=stats.sem(squared_errors))))
+
+
+
+

@@ -31,7 +31,10 @@ plt.rcParams['ytick.labelsize'] = 12
 # Where to save the figures
 PROJECT_ROOT_DIR = "."
 CHAPTER_ID = "classification"
+import sys
 
+reload(sys)
+sys.setdefaultencoding('ISO-8859-1')
 #guarda una imagen
 def save_fig(fig_id, tight_layout=True):
     path = os.path.join(PROJECT_ROOT_DIR, "images", CHAPTER_ID, fig_id + ".png")
